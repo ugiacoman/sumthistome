@@ -1,0 +1,3 @@
+#Musicao
+
+Repo for music summarition hack at HackUVA 2015. Members: Ulises Giacoman, Brad Blount, Matt Nelli...
