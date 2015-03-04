@@ -1,4 +1,3 @@
-
 from flask import Flask, render_template, request, jsonify
 from dogo import parse_it_asap
 
