@@ -20,7 +20,7 @@ def index():
 def summary():
     song = request.args.get('a', 0, type=str)
     summed = parse_it_asap(song)
-    return jsonify(result=summed)
+    return jsonify(summed)
 
 if __name__ == "__main__":
     app.run(debug = True)
