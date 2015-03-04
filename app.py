@@ -18,9 +18,9 @@ def index():
 
 @app.route('/summary')
 def summary():
-    song = request.args.get('a', 0, type=str)
+    song = request.args.get('a', type=str)
     summed = parse_it_asap(song)
-    return jsonify(summed)
+    return jsonify(result=summed)
 
 if __name__ == "__main__":
     app.run(debug = True)
