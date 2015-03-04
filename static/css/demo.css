@@ -37,11 +37,6 @@ a {
 	outline: none;
 }
 
-#badge{
-	margin-top: 5%;
-	text-align: center;
-}
-
 a:hover, a:focus {
 	color: #fff;
 }
