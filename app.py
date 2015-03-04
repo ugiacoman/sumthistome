@@ -11,7 +11,7 @@ def index():
 
 @app.route('/_summary', methods=["GET"])
 def summary():
-    song = request.args.get('a')
+    song = request.args.get('a')	
     return jsonify(result=dogo.parse_it_asap(song))
 
 if __name__ == "__main__":
