@@ -1,5 +1,7 @@
 from flask import Flask, render_template, request, jsonify
 import dogo
+import sys
+import logging
 
 app = Flask(__name__)
 
