@@ -9,10 +9,10 @@ def index():
     return render_template("index.html")
 
 
-@app.route('/summary')
+@app.route('/_summary')
 def summary():
     song = request.args.get('a', 0, type=str)
-    summed = parse_it_asap(song)
+    summed = dogo.parse_it_asap(song)
     return jsonify(result=summed)
 
 if __name__ == "__main__":
