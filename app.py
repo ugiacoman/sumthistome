@@ -9,11 +9,10 @@ def index():
     return render_template("index.html")
 
 
-@app.route('/_summary')
+@app.route('/_summary', methods=["GET"])
 def summary():
     song = request.args.get('a')
-    summed = dogo.parse_it_asap(song)
-    return jsonify(result=summed)
+    return jsonify(result=dogo.parse_it_asap(song))
 
 if __name__ == "__main__":
     app.run(debug = True)
