@@ -15,9 +15,9 @@
 	    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 		<script src="../static/js/modernizr.custom.js"></script>
 		<script type=text/javascript>
-		$(function() {
+		$(document).ready(function() {
 		  $('a#calculate').bind('click', function() {
-		    $.get('/_summary', {
+		    $.getJSON('/_summary', {
 		      a: $('input[name="a"]').val(),
 		    }, function(data) {
 		      $("#result").text(data.result);
@@ -34,6 +34,7 @@
 				<section>
 					<h2>Gimme a song<br/>to summarize</h2>
 			            <input type="text" size="15" name="a" > 
+			            <br><br>
 			            <span id="result">?</span>
 					 	<br>=<br>
 						
