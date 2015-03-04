@@ -43,7 +43,7 @@ def parse_it_asap(song):
 	driver.set_window_size(1280, 1024) # set browser size.
 	driver.get('http://www.freesummarizer.com') # Load page
 	summarize_box = driver.find_element_by_xpath('//*[@id="summarizebutton"]/i')
-	time.sleep(3)
+	# time.sleep(1)
 	summarize_box.click()
 	#driver.save_screenshot('github.png')
 
