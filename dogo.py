@@ -70,8 +70,7 @@ def parse_it_asap(song):
 	summary2 = str(summary2)
 	summary2 = summary2[21:]
 	summary2 = summary2.partition('Want')
-	sumz = summary2[0]
-	return sumz 
+	return summary2[0]
 
 if __name__ == "__main__":
 	print(parse_it_asap(song))
