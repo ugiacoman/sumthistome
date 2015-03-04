@@ -1,5 +1,5 @@
 from flask import Flask, render_template, request, jsonify
-from dogo import parse_it_asap
+import dogo
 
 app = Flask(__name__)
 
@@ -11,7 +11,7 @@ def index():
 
 @app.route('/_summary')
 def summary():
-    song = request.args.get('a', 0, type=str)
+    song = request.args.get('a')
     summed = dogo.parse_it_asap(song)
     return jsonify(result=summed)
 
